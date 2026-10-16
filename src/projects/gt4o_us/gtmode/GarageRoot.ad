@@ -800,7 +800,7 @@ module GTmodeProject::GarageRoot::Focus::Nation::OptionMenu
     function onValueChanged(context, index)
     {
         nation_ = index == 0 ? "all" : NationList_[index - 1];
-        tuner_ = 0;
+        tuner_ = "all";
         initTunerMenu(context, Focus::Manufacturer::OptionMenu);
         updateList(context);
     }
